@@ -2,27 +2,21 @@
  * @Author: huomax
  * @Date: 2023-05-21 03:31:56
  * @LastEditors: huomax
- * @LastEditTime: 2023-05-26 20:06:35
+ * @LastEditTime: 2023-06-04 05:07:08
  * @FilePath: /wgk/wc-intercept/ptrace/sample/tracee.c
- * @Description: 
+ * @Description: 测试程序（tracee），输出hello world!
  * 
  * Copyright (c) 2023 by huomax, All Rights Reserved. 
  */
-#include <errno.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
 
-int hello(long a) {
+void hello() {
     printf("hello!\n");
-    return 1;
 }
 
 int main(void)
 {
-    char buf[8] = "1234567";
-    long a = 0x12345678;
-    hello(a);
+    hello();
+    printf("world!\n");
     return 0;
 }

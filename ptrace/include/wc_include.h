@@ -2,8 +2,8 @@
  * @Author: huomax
  * @Date: 2023-05-25 00:39:02
  * @LastEditors: huomax
- * @LastEditTime: 2023-05-25 00:40:04
- * @FilePath: /wgk/wc-intercept/ptrace/sample/trace_include.h
+ * @LastEditTime: 2023-06-03 05:07:13
+ * @FilePath: /wgk/wc-intercept/ptrace/include/wc_include.h
  * @Description: 
  * 
  * Copyright (c) 2023 by huomax, All Rights Reserved. 
@@ -21,6 +21,7 @@
 
 /* POSIX */
 #include <unistd.h>
+#include <stdint.h>
 #include <sys/user.h>
 #include <sys/wait.h>
 
