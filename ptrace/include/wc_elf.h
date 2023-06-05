@@ -2,15 +2,15 @@
  * @Author: huomax
  * @Date: 2023-05-24 23:42:00
  * @LastEditors: huomax
- * @LastEditTime: 2023-05-27 22:58:25
+ * @LastEditTime: 2023-06-06 03:29:21
  * @FilePath: /wgk/wc-intercept/ptrace/include/wc_elf.h
  * @Description: 解析被跟踪进程的ELF文件
  * 
  * Copyright (c) 2023 by huomax, All Rights Reserved. 
  */
 
-#ifndef __WC_ELF__
-#define __WC_ELF__
+#ifndef __WC_ELF_
+#define __WC_ELF_
 
 #include <libelf.h>
 #include <gelf.h>
@@ -23,43 +23,24 @@
 #include <sys/wait.h>
 #include <sys/user.h>
 
-
 /**
- * @brief: 运行程序直到指定函数的第一条指令
- * @param {int} pid 被跟踪进程PID
- * @param {int} status 子进程信号, 由wait(&status)返回
- * @param {long} address 指定地址
+ * @brief: 获取符号在ELF文件中的偏移量
+ * @param {char*} file_path
+ * @param {char*} target_symbol
+ * @param {int*} symbol_offset 用于存放偏移量的变量地址
  * @description: 
- * @return {long} 函数的返回地址
+ * @return {int} 错误码，为-1时表示出现错误
  */
-long  RunTo(int pid, int status, long address);
-
-/**
- * @brief: 获取指定符号在ELF中的偏移量
- * @param {char*} file_path ELF文件路径
- * @param {char*} target_symbol 目标符号
- * @description: 
- * @return {*}
- */
-long GetSymbolAddress(char* file_path, char* target_symbol);
-
-
-/**
- * @brief: 获取进程入口点地址
- * @param {char*} file_path ELF文件路径
- * @description: 
- * @return {*} 
- */
-long GetEntryAddress(char* file_path);
+int get_symbol_offset(char* file_path, char* target_symbol, int* symbol_offset);
 
 
 /**
  * @brief: 获取被跟踪进程在虚拟内存中的加载地址
  * @param {int} pid 被跟踪进程PID
  * @description: 
- * @return {long int}
+ * @return {int}
  */
-long GetLoadAddress(int pid);
+int get_load_address(int pid, long* load_address);
 
 
 #endif

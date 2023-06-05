@@ -1,44 +1,45 @@
 CC = gcc
-INCLUDE = -I./include/ -I./backend
-SRC = ./src
-OBJ = ./obj
-BACKEND = ./backend
-SAMPLE = ./sample
+CFLAGS = -I./include/ -I./backend
 
-tracer : tracer.o wc_elf.o wc_backend.so
+INCLUDES = -I./include/
+BACKEND_INCLUDES =  -I./backend
+
+# 源文件和目标文件目录
+SRCDIR = src
+OBJDIR = obj
+BACKENDDIR = backend
+EXAMPLEDIR = example
+
+# 要编译的源文件和目标文件
+SOURCES = $(wildcard $(SRCDIR)/*.c)
+OBJECTS = $(patsubst $(SRCDIR)/%.c,$(OBJDIR)/%.o,$(SOURCES))
+
+# 要编译的后端处理逻辑代码
+BACKEND_SOURCES = $(wildcard $(BACKENDDIR)/*.c)
+
+# 应用示例代码
+EXAMPLE_SOURCES = $(wildcard $(EXAMPLEDIR)/*.c)
+
+tracer : $(OBJECTS) wc_backend.so
 	$(CC)  $^ -o tracer -lelf -L.
-	rm tracer.o wc_elf.o wc_ptrace.o wc_backend.o
-	mv tracer $(OBJ)
+	rm wc_backend.o
 
-breakpoint : $(SAMPLE)/breakpoint_tracer.c wc_elf.o
-	$(CC) -c $(SAMPLE)/breakpoint_tracer.c $(INCLUDE) -o breakpoint.o
-	$(CC) wc_elf.o breakpoint.o -o breakpoint -lelf
-	rm wc_elf.o breakpoint.o
+backend : $(BACKEND_SOURCES)
+	$(CC) -c -fPIC $(CFLAGS) $^ -o wc_backend.o
+	$(CC) -shared -fPIC wc_backend.o -o wc_backend.so
+	rm wc_backend.o
 
+wc_backend.so : $(BACKEND_SOURCES)
+	$(CC) -c -fPIC $(CFLAGS) $^ -o wc_backend.o
+	$(CC) -shared -fPIC wc_backend.o -o wc_backend.so
 
-tracee : $(SAMPLE)/tracee.c
+$(OBJDIR)/%.o : $(SRCDIR)/%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+tracee : $(EXAMPLEDIR)/tracee.c
 	$(CC) $^ -o tracee
-	mv tracee $(OBJ)
-
-wc_backend.so : $(BACKEND)/wc_backend.c wc_ptrace.o
-	gcc -c -fPIC $(INCLUDE) $(BACKEND)/wc_backend.c -o wc_backend.o
-	gcc -shared -fPIC wc_backend.o wc_ptrace.o -o wc_backend.so
-
-wc_backend : $(BACKEND)/wc_backend.c wc_ptrace.o
-	gcc -c -fPIC $(INCLUDE) $(BACKEND)/wc_backend.c -o wc_backend.o
-	gcc -shared -fPIC wc_backend.o wc_ptrace.o -o wc_backend.so
-	rm wc_ptrace.o wc_backend.o
-
-wc_elf.o : $(SRC)/wc_elf.c
-	$(CC) -c $^ $(INCLUDE) -o wc_elf.o
-
-tracer.o : $(SRC)/tracer.c
-	$(CC) -c $^ $(INCLUDE) -o tracer.o
-
-wc_ptrace.o : $(BACKEND)/wc_ptrace.c
-	$(CC) -c -fPIC $^ $(INCLUDE) -o wc_ptrace.o
 
 clean:
-	rm tracer.o wc_elf.o wc_ptrace.o tracer tracee
+	rm $(OBJECTS)
 
-.PHONY: clean tracer tracee wc_backend breakpoint
+.PHONY: clean tracer tracee backend 
