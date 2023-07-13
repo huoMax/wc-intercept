@@ -9,6 +9,7 @@ SRCDIR = src
 OBJDIR = obj
 BACKENDDIR = backend
 EXAMPLEDIR = example
+LIBOBJDIR = dym_lib
 
 # 要编译的源文件和目标文件
 SOURCES = $(wildcard $(SRCDIR)/*.c)
@@ -22,7 +23,6 @@ EXAMPLE_SOURCES = $(wildcard $(EXAMPLEDIR)/*.c)
 
 tracer : $(OBJECTS) wc_backend.so
 	$(CC)  $^ -o tracer -lelf -L.
-	rm wc_backend.o
 
 backend : $(BACKEND_SOURCES)
 	$(CC) -c -fPIC $(CFLAGS) $^ -o wc_backend.o
@@ -42,4 +42,4 @@ tracee : $(EXAMPLEDIR)/tracee.c
 clean:
 	rm $(OBJECTS)
 
-.PHONY: clean tracer tracee backend 
+.PHONY: clean tracer tracee backend
