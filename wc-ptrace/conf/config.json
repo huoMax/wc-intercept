@@ -4,48 +4,5 @@
     "syscalls": [
     ],
     "funcs": [
-        {
-            "func_name": "malloc",
-            "back_enter": "test",
-            "back_exit": "test"
-
-        },
-        {
-            "func_name": "free",
-            "back_enter": "test",
-            "back_exit": "test"
-        },
-        {
-            "func_name": "fopen",
-            "back_enter": "test",
-            "back_exit": "test"
-
-        },
-        {
-            "func_name": "fclose",
-            "back_enter": "test",
-            "back_exit": "test"
-        },
-        {
-            "func_name": "fgets",
-            "back_enter": "test",
-            "back_exit": "test"
-
-        },
-        {
-            "func_name": "fwrite",
-            "back_enter": "test",
-            "back_exit": "test"
-        },
-        {
-            "func_name": "memset",
-            "back_enter": "test",
-            "back_exit": "test"
-        },
-        {
-            "func_name": "rand",
-            "back_enter": "test_rand_enter",
-            "back_exit": "test_rand_exit"
-        }
     ]
 }

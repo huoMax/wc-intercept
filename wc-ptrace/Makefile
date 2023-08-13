@@ -2,7 +2,7 @@ CC = g++
 
 # 源文件和目标文件目录
 SRCDIR = ./src
-OBJDIR = ./obj
+OBJDIR = ./bin
 
 # 要编译的源文件和目标文件
 SOURCES = $(wildcard $(SRCDIR)/*.cc)

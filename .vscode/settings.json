@@ -58,6 +58,9 @@
         "ctime": "cpp",
         "iomanip": "cpp",
         "typeindex": "cpp",
-        "user.h": "c"
+        "user.h": "c",
+        "stdlib.h": "c",
+        "dlfcn.h": "c",
+        "wc_preload.h": "c"
     }
 }
