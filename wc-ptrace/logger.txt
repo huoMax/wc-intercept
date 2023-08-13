@@ -1,0 +1,174 @@
+2023-08-13 13:50:56 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 13:50:56 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 13:50:56 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 13:50:56 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 13:50:56 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 13:50:56 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 13:50:56 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 13:50:56 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 6no error
+
+2023-08-13 13:50:56 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 6, index of rela is 1no error
+
+2023-08-13 13:50:56 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55812a159000
+
+2023-08-13 13:51:15 [19032ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 13:51:15 [19032ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 13:51:15 [19032ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 13:51:15 [19032ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 13:51:15 [19032ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 13:51:15 [19032ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 13:51:15 [19032ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 13:51:35 [39060ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 13:51:35 [39060ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 13:51:35 [39060ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 13:51:35 [39060ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 13:51:35 [39060ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 13:51:35 [39060ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 13:51:35 [39060ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 13:51:58 [62091ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-13 13:51:58 [62091ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-13 14:41:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 14:41:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 14:41:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 14:41:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 14:41:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 14:41:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 14:41:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 14:41:18 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-13 14:41:18 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-13 14:41:18 [2ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 5560fa7a0000
+
+2023-08-13 14:42:02 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 14:42:02 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 14:42:02 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 14:42:02 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 14:42:02 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 14:42:02 [2ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 14:42:02 [2ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 14:42:02 [2ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-13 14:42:02 [2ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-13 14:42:02 [2ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55e08538f000
+
+2023-08-13 14:43:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 14:43:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 14:43:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 14:43:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 14:43:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 14:43:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 14:43:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 14:43:49 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-13 14:43:49 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-13 14:43:49 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55ff12f6f000
+
+2023-08-13 14:44:02 [13024ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 14:44:02 [13024ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 14:44:02 [13024ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 14:44:02 [13024ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 14:44:02 [13024ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 14:44:02 [13024ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 14:44:02 [13024ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [0ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [1ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
+2023-08-13 14:48:35 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-13 14:48:35 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-13 14:48:35 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 5574ee078000
+
+2023-08-13 14:49:00 [25045ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (malloc) in ELF (./test_dynamic).
+
+2023-08-13 14:49:00 [25046ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (free) in ELF (./test_dynamic).
+
+2023-08-13 14:49:00 [25046ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fopen) in ELF (./test_dynamic).
+
+2023-08-13 14:49:00 [25046ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fclose) in ELF (./test_dynamic).
+
+2023-08-13 14:49:00 [25046ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fgets) in ELF (./test_dynamic).
+
+2023-08-13 14:49:00 [25046ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (fwrite) in ELF (./test_dynamic).
+
+2023-08-13 14:49:00 [25046ms]	[ERROR]	[intercept]	src/monitor.cc:85	Can't found symbol (memset) in ELF (./test_dynamic).
+
