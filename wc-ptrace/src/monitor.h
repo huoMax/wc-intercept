@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-08-03 17:45:38
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-13 13:02:57
+ * @LastEditTime: 2023-08-14 21:05:07
  * @FilePath: /wc-intercept/wc-ptrace/src/monitor.h
  * @Description: 
  * 
@@ -55,11 +55,15 @@ public:
 
     void trigger_exit(BreakPoint::ptr bp, struct user_regs_struct* regs);
 
-    void wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2);
+    int wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2);
 
-    void wait_no_syscall(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2);
+    int wait_no_syscall(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2);
 
     void entry(TraceeElf::ptr elf);
+
+    bool is_empty_funcs() {return m_funcs.empty();}
+
+    bool is_empty_syscalls() {return m_bps.empty();}
 
 private:
 

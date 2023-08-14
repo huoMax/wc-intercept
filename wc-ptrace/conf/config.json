@@ -1,8 +1,14 @@
 {
-    "library_path": "/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so",
+    "library_path": "/home/huomax/wgk/wc-intercept/wc-ptrace/example/backend/shared/backend_table.so",
+    "ld_preload": "/home/huomax/wgk/wc-intercept/wc-ptrace/example/backend/shared/preload_table.so",
     "logger_path": "./logger.txt",
     "syscalls": [
     ],
     "funcs": [
+        {
+            "func_name": "rand",
+            "back_enter": "test_rand_enter",
+            "back_exit": "test_rand_exit"
+        }
     ]
 }

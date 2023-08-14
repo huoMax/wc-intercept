@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-08-03 17:45:47
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-13 14:47:13
+ * @LastEditTime: 2023-08-14 21:02:21
  * @FilePath: /wc-intercept/wc-ptrace/src/monitor.cc
  * @Description: 
  * 
@@ -144,7 +144,7 @@ void Monitor::entry(TraceeElf::ptr elf) {
 
 }
 
-void Monitor::wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2) {
+int Monitor::wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2) {
     WC_LOG_ERROR(logger) << "funcs number: " << m_funcs.size() << std::endl;
     int status;
     for (;;) {
@@ -201,6 +201,9 @@ void Monitor::wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, 
                 update_2(config, elf);
                 flag_update_2 = false;
             }
+            if (m_syscalls.empty()) {
+                return 2;
+            }
             continue;
         }
         
@@ -216,6 +219,17 @@ void Monitor::wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, 
                 if (m_syscalls[regs.orig_rax]->m_enter_handle) {
                     m_syscalls[regs.orig_rax]->m_enter_handle(&regs, m_pid);
                 }
+            }
+            if (flag_update_1) {
+                update_1(config, elf);
+                flag_update_1 = false;
+            }
+            if (flag_update_2) {
+                update_2(config, elf);
+                flag_update_2 = false;
+            }
+            if (m_syscalls.empty()) {
+                return 2;
             }
         }
         /* 其他非监听情况，忽略 */
@@ -275,6 +289,9 @@ void Monitor::wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, 
                 update_2(config, elf);
                 flag_update_2 = false;
             }
+            if (m_syscalls.empty()) { // 更换拦截逻辑
+                return 2;
+            }
             continue;
         }
         /* syscall-exit-stop */
@@ -290,6 +307,17 @@ void Monitor::wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, 
                     m_syscalls[regs.orig_rax]->m_exit_handle(&regs, m_pid);
                 }
             }
+            if (flag_update_1) {
+                update_1(config, elf);
+                flag_update_1 = false;
+            }
+            if (flag_update_2) {
+                update_2(config, elf);
+                flag_update_2 = false;
+            }
+            if (m_syscalls.empty()) {
+                return 2;
+            }
         }
         else if (WIFSTOPPED(status) && WSTOPSIG(status) != 0x85) {
             WC_LOG_ERROR(logger) << "[Monitor::wait]: An unknown signal received! " 
@@ -298,6 +326,7 @@ void Monitor::wait(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, 
             continue;
         }
     }
+    return 0;
 }
 
 void Monitor::initial_funcs(Json::Value& values, TraceeElf::ptr elf) {
@@ -885,7 +914,7 @@ void Monitor::update_2(Config::ptr config, TraceeElf::ptr elf) {
     update_funcs(config->m_values, elf);
 }
 
-void Monitor::wait_no_syscall(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2) {
+int Monitor::wait_no_syscall(Config::ptr config, TraceeElf::ptr elf, bool& flag_update_1, bool& flag_update_2) {
     ptrace(PTRACE_CONT, m_pid, 0, 0);
     int status;
     while (waitpid(m_pid, &status, 0)) {
@@ -932,9 +961,11 @@ void Monitor::wait_no_syscall(Config::ptr config, TraceeElf::ptr elf, bool& flag
                 update_2(config, elf);
                 flag_update_2 = false;
             }
+            if (!m_syscalls.empty()) return 1;
         }
         ptrace(PTRACE_CONT, m_pid, 0, 0);
     }
+    return 0;
 }
 
 } // namespace wc

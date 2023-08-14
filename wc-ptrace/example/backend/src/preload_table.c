@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-08-13 17:43:28
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-13 17:43:55
+ * @LastEditTime: 2023-08-13 21:41:38
  * @FilePath: /wc-intercept/wc-ptrace/example/backend/src/preload_table.c
  * @Description: 
  * 
@@ -62,5 +62,6 @@ void* memset(void* ptr, int value, size_t num) {
 
 int rand() {
     INITIAL(rand)
-    return wc_rand();
+    printf("this is LD_PRELOAD\n");
+    return wc_rand() % 100;
 }

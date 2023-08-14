@@ -1,0 +1,62 @@
+2023-08-13 21:29:30 [0ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-13 21:29:30 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55812806f000
+
+2023-08-13 21:29:49 [1ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-13 21:29:49 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 5590b3135000
+
+2023-08-13 21:31:18 [0ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-13 21:31:18 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55edfef5e000
+
+2023-08-13 21:43:04 [0ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-13 21:43:04 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 565376176000
+
+2023-08-13 21:43:23 [1ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-13 21:43:23 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55c14b404000
+
+2023-08-13 21:46:53 [1ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-13 21:46:53 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55aae1dae000
+
+2023-08-13 21:46:54 [1069ms]	[ERROR]	[intercept]	src/monitor.cc:901	[Monitor::wait]: tracee normally exited ./example/bin/test_rw pid:  8167 status: 0
+
+2023-08-14 10:56:18 [1ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-14 10:56:18 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-14 10:56:18 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-14 10:56:18 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 555714b0f000
+
+2023-08-14 10:56:29 [13ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-14 10:56:29 [13ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 6no error
+
+2023-08-14 10:56:29 [14ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 6, index of rela is 1no error
+
+2023-08-14 10:56:29 [14ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 557381a98000
+
+2023-08-14 10:59:15 [1ms]	[ERROR]	[intercept]	src/monitor.cc:61	[Monitor::open_backend_library] Can't open backend library (/home/huomax/wgk/wc-intercept/wc-ptrace/library/backend_table.so)!
+
+2023-08-14 10:59:15 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-14 10:59:15 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-14 10:59:15 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 5652bcfb0000
+
+2023-08-14 11:00:05 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-14 11:00:05 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-14 11:00:05 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55ae18186000
+
+2023-08-14 11:00:39 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: randsuccess, symbol index in .dynsymis 7no error
+
+2023-08-14 11:00:39 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 7, index of rela is 2no error
+
+2023-08-14 11:00:39 [2ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55890e265000
+

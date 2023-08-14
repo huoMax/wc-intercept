@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-07-26 23:16:15
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-11 20:51:27
+ * @LastEditTime: 2023-08-13 20:27:09
  * @FilePath: /wc-intercept/wc-ptrace/src/config.h
  * @Description: 配置模块类封装
  * 
@@ -33,7 +33,8 @@
 #define CONFIG_PATH     "config.json"
 
 // 配置选项
-#define CONFIG_LIBRARY  "library_path"
+#define CONFIG_LIBRARY      "library_path"
+#define CONFIG_LD_PRELOAD   "ld_preload"
 
 namespace wc {
 

@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-07-24 23:21:32
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-13 14:48:06
+ * @LastEditTime: 2023-08-14 21:07:41
  * @FilePath: /wc-intercept/wc-ptrace/src/main.cc
  * @Description: 
  * 
@@ -63,8 +63,16 @@ int main(int argc, char **argv)
         std::cout << "Exception caught: " << e.what() << std::endl;
         return 0;
     }
+
+    // 加载预加载库
+    std::string preload_libaray = "";
+    if (env.has("l")) {
+        preload_libaray = config->get_string(CONFIG_LD_PRELOAD);
+    }
+
     pid_t pid = fork();
     int status;
+    char *child_argv[] = {NULL};
     switch (pid) {
         case -1:
             WC_LOG_DEBUG(logger) << strerror(errno) <<std::endl;
@@ -72,7 +80,10 @@ int main(int argc, char **argv)
             exit(-1);
         case 0: 
             ptrace(PTRACE_TRACEME, 0, 0, 0);
-            execvp(tracee_path.c_str(), argv + 1);
+            if (!env.set_env("LD_PRELOAD", preload_libaray)) {
+                WC_LOG_ERROR(logger) << "[main] not set LD_PRELOAD" << std::endl;
+            }
+            execvp(tracee_path.c_str(), child_argv);
             WC_LOG_DEBUG(logger) << strerror(errno) <<std::endl;
             return 0;;
     }
@@ -96,7 +107,20 @@ int main(int argc, char **argv)
 
     // 在入口地址设置断点
     monitor->entry(elf);
-    monitor->wait_no_syscall(config, elf, flag_update_1, flag_update_2);
+    int logic = 1;
+    if (monitor->is_empty_syscalls()) {
+        logic = 2;
+    }
+
+    while (true) {
+        if (logic == 2) {
+            logic = monitor->wait_no_syscall(config, elf, flag_update_1, flag_update_2);
+        }
+        if (logic == 1) {
+            logic = monitor->wait(config, elf, flag_update_1, flag_update_2);
+        }
+        else break;
+    }
     
     return 0;
 }

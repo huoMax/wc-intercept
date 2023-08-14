@@ -1,9 +1,9 @@
 /*
  * @Author: huomax 630509357@qq.com
- * @Date: 2023-08-13 17:28:53
+ * @Date: 2023-08-14 10:52:31
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-13 21:37:02
- * @FilePath: /wc-intercept/wc-ptrace/example/test_dynamic.cc
+ * @LastEditTime: 2023-08-14 10:53:59
+ * @FilePath: /wc-intercept/wc-ptrace/test_delay.cc
  * @Description: 
  * 
  * Copyright (c) 2023 by huomax, All Rights Reserved. 
