@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-07-27 20:33:23
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-06 18:02:36
+ * @LastEditTime: 2023-08-15 15:27:57
  * @FilePath: /wc-intercept/wc-ptrace/src/env.cc
  * @Description: 环境变量类实现
  * 
@@ -125,7 +125,7 @@ std::string Env::get_absolute_path(const std::string &path) const {
 }
 
 std::string Env::get_config_path() {
-    return get_absolute_path(get("c", "conf"))+"/config.json";
+    return get_absolute_path(get("c", "conf/config.json"));
 }
 
 }

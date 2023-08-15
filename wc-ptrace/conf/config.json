@@ -6,6 +6,11 @@
     ],
     "funcs": [
         {
+            "func_name": "sleep",
+            "back_enter": "",
+            "back_exit": ""
+        },
+        {
             "func_name": "rand",
             "back_enter": "test_rand_enter",
             "back_exit": "test_rand_exit"

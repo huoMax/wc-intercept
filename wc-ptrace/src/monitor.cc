@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-08-03 17:45:47
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-14 21:02:21
+ * @LastEditTime: 2023-08-15 10:57:59
  * @FilePath: /wc-intercept/wc-ptrace/src/monitor.cc
  * @Description: 
  * 
@@ -377,7 +377,7 @@ void Monitor::reinitial_function(Json::Value& values, Function::ptr func) {
             func->m_frequency = frequency > 1 ? frequency : 1;
         }
     }
-    else {
+    else if (!values.isMember(FREQUENCY)) {
         func->m_frequency = 1;
     }
 
@@ -389,12 +389,12 @@ void Monitor::reinitial_function(Json::Value& values, Function::ptr func) {
             func->m_enter_handle = enter_handle;
         }
     }
-    else {
+    else if (!values.isMember(BACKEND_ENTER) || values[BACKEND_ENTER].asString().empty()) {
         func->m_enter_name = "";
         func->m_enter_handle = nullptr;
     }
 
-    if (values.isMember(BACKEND_EXIT) && values[BACKEND_EXIT].asString() != func->m_exit_name) {
+    if (values.isMember(BACKEND_EXIT)) {
         if (values[BACKEND_EXIT].asString() != func->m_exit_name) {
             std::string exit_name = values[BACKEND_EXIT].asString();
             backend_handle exit_handle = get_backend(exit_name);
@@ -402,7 +402,7 @@ void Monitor::reinitial_function(Json::Value& values, Function::ptr func) {
             func->m_exit_name = exit_name;
         }
     }
-    else {
+    else if (!values.isMember(BACKEND_EXIT) || values[BACKEND_EXIT].asString().empty()){
         func->m_exit_name = "";
         func->m_exit_handle = nullptr;
     }

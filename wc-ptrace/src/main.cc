@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-07-24 23:21:32
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-14 21:07:41
+ * @LastEditTime: 2023-08-15 15:29:56
  * @FilePath: /wc-intercept/wc-ptrace/src/main.cc
  * @Description: 
  * 
@@ -37,6 +37,7 @@ int main(int argc, char **argv)
     
     // 初始化配置模块
     std::string conf_root = env.get_config_path();
+    std::cout << conf_root << std::endl;
     wc::Config::ptr config(new wc::Config(conf_root));
 
     // 设置日志输出文件
@@ -104,6 +105,7 @@ int main(int argc, char **argv)
     signal(SIGUSR1, signal_handler);
     signal(SIGUSR2, signal_handler);
     std::cout << "tracee pid: " << getpid() << std::endl;
+    WC_LOG_INFO(logger) << "This intercept tracer pid is: " << getpid() << std::endl;
 
     // 在入口地址设置断点
     monitor->entry(elf);

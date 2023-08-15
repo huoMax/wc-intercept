@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-07-26 23:16:15
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-13 20:27:09
+ * @LastEditTime: 2023-08-15 18:30:13
  * @FilePath: /wc-intercept/wc-ptrace/src/config.h
  * @Description: 配置模块类封装
  * 
@@ -19,22 +19,21 @@
 #include <string>
 #include <json/json.h>
 
-// 支持的拦截配置选项
-#define SYSCALL_NAME        "syscall_id"
-#define FUNC_NAME           "func_name"
-#define FREQUENCY           "frequency"
-#define BACKEND_ENTER       "back_enter"
-#define BACKEND_EXIT        "back_exit"
-#define INTERCEPT_FUNC      "funcs"
-#define INTERCEPT_SYSCALL   "syscalls"
-#define LD_PRELOAD          "preload"
+// 支持的拦截信息选项
+#define SYSCALL_NAME        "syscall_id"    // 系统调用号
+#define FUNC_NAME           "func_name"     // 函数名
+#define FREQUENCY           "frequency"     // 拦截频率，未使用
+#define BACKEND_ENTER       "back_enter"    // 函数/系统调用入口的后端处理函数名称
+#define BACKEND_EXIT        "back_exit"     // 函数/系统调用返回的后端处理函数名称
+#define LD_PRELOAD          "preload"       // LD_PRELOAD支持，未使用
 
-// 默认的配置文件名
-#define CONFIG_PATH     "config.json"
+// 配置文件选项
+#define INTERCEPT_FUNC      "funcs"         // 所有的函数拦截目标
+#define INTERCEPT_SYSCALL   "syscalls"      // 所有的系统调用拦截目标
+#define CONFIG_LIBRARY      "library_path"  // 指定后端处理逻辑库路径
+#define CONFIG_LD_PRELOAD   "ld_preload"    // 指定的预加载库路径
 
-// 配置选项
-#define CONFIG_LIBRARY      "library_path"
-#define CONFIG_LD_PRELOAD   "ld_preload"
+#define CONFIG_PATH     "config.json"       // 默认的配置文件名
 
 namespace wc {
 
