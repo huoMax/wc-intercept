@@ -1,9 +1,9 @@
 /*
  * @Author: huomax 630509357@qq.com
- * @Date: 2023-08-13 17:28:36
+ * @Date: 2023-08-18 17:52:37
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-18 17:52:24
- * @FilePath: /wc-intercept/wc-ptrace/example/test_rw.cc
+ * @LastEditTime: 2023-08-18 17:53:38
+ * @FilePath: /wc-intercept/wc-ptrace/example/test_mvee.cc
  * @Description: 
  * 
  * Copyright (c) 2023 by huomax, All Rights Reserved. 
@@ -12,14 +12,13 @@
 #include <time.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 
 int main() {
 
     FILE *input, *output;
-    struct timespec start = {0};
-    clock_gettime(CLOCK_MONOTONIC_RAW, &start);
     
-    int count = 100000;
+    int count = 300;
     while (count--) {
         char *buffer = (char*)malloc(sizeof(char)*256);
         memset(buffer, '\n', sizeof(char)*256);
@@ -30,10 +29,8 @@ int main() {
         fclose(input);
         fclose(output);
         free(buffer);
+        sleep(1);
     }
 
-    struct timespec end = {0};
-    clock_gettime(CLOCK_MONOTONIC_RAW, &end);
-    printf("cost msec: %ld\n", (end.tv_sec * 1000 + end.tv_nsec / 1000000)-(start.tv_sec * 1000 + start.tv_nsec / 1000000));
     return 0;
 }

@@ -1,0 +1,180 @@
+2023-08-18 18:42:22 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 18:42:22 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 18:42:22 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:42:22 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:42:22 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 18:42:22 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 18:42:22 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:42:22 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 14576
+
+2023-08-18 18:42:22 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 562c3971d000
+
+2023-08-18 18:42:22 [1ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 18:46:39 [0ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 18:46:39 [0ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 18:46:39 [0ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:46:39 [0ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:46:39 [0ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 18:46:39 [0ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 18:46:39 [0ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:46:39 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 15321
+
+2023-08-18 18:46:39 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 559e3a79d000
+
+2023-08-18 18:46:39 [1ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 18:51:53 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 18:51:53 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 18:51:53 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:51:53 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:51:53 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 18:51:53 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 18:51:53 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:51:53 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 16501
+
+2023-08-18 18:51:53 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 557027bc8000
+
+2023-08-18 18:51:53 [2ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 18:54:33 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 18:54:33 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 18:54:33 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:54:33 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:54:33 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 18:54:33 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 18:54:33 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:54:33 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 16965
+
+2023-08-18 18:54:33 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 561f963cc000
+
+2023-08-18 18:54:33 [1ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 18:55:04 [0ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 18:55:04 [0ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 18:55:04 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:55:04 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:55:04 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 18:55:04 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 18:55:04 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:55:04 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 17152
+
+2023-08-18 18:55:04 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 5561fdcf4000
+
+2023-08-18 18:55:04 [1ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 18:56:12 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 18:56:12 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 18:56:12 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:56:12 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:56:12 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 18:56:12 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 18:56:12 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:56:12 [2ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 17596
+
+2023-08-18 18:56:12 [2ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 56382c8fc000
+
+2023-08-18 18:56:12 [2ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 18:56:23 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 18:56:23 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 18:56:23 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:56:23 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:56:23 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 18:56:23 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 18:56:23 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 18:56:23 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 17687
+
+2023-08-18 18:56:23 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55fad6535000
+
+2023-08-18 18:56:23 [1ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 19:00:32 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 19:00:32 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 19:00:32 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 19:00:32 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 19:00:32 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 19:00:32 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 19:00:32 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 19:00:32 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 19123
+
+2023-08-18 19:00:32 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 55908ddee000
+
+2023-08-18 19:00:32 [1ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+
+2023-08-18 19:04:03 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: sleepsuccess, symbol index in .dynsymis 13no error
+
+2023-08-18 19:04:03 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 13, index of rela is 8no error
+
+2023-08-18 19:04:03 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 19:04:03 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 19:04:03 [1ms]	[INFO]	[intercept]	src/elf.cc:198	[TraceeElf::search_symbol]: search symbol: fwritesuccess, symbol index in .dynsymis 11no error
+
+2023-08-18 19:04:03 [1ms]	[INFO]	[intercept]	src/elf.cc:223	[TraceeElf::search_rela_plt]: search rela index success, symbol in dynsym index 11, index of rela is 7no error
+
+2023-08-18 19:04:03 [1ms]	[ERROR]	[intercept]	src/monitor.cc:72	[Monitor::get_backend] Can't found function handle blankerrno is /home/huomax/wgk/wc-intercept/test_2/mvee_2.so: undefined symbol: blank
+
+2023-08-18 19:04:03 [1ms]	[INFO]	[intercept]	src/main.cc:108	This intercept tracer pid is: 20474
+
+2023-08-18 19:04:03 [1ms]	[INFO]	[intercept]	src/monitor.cc:130	load address is: 564955305000
+
+2023-08-18 19:04:03 [1ms]	[ERROR]	[intercept]	src/monitor.cc:148	funcs number: 2
+

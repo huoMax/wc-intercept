@@ -1,0 +1,18 @@
+{
+    "library_path": "/home/huomax/wgk/wc-intercept/wc-ptrace/example/test_mvcctest_1/mvee_1.so",
+    "logger_path": "./logger.txt",
+    "syscalls": [
+    ],
+    "funcs": [
+        {
+            "func_name": "sleep",
+            "back_enter": "blank",
+            "back_exit": "blank"
+        },
+        {
+            "func_name": "fwrite",
+            "back_enter": "mvee_fgets",
+            "back_exit": "blank"
+        }
+    ]
+}

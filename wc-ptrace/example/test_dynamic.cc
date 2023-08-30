@@ -2,7 +2,7 @@
  * @Author: huomax 630509357@qq.com
  * @Date: 2023-08-13 17:28:53
  * @LastEditors: huomax 630509357@qq.com
- * @LastEditTime: 2023-08-13 21:37:02
+ * @LastEditTime: 2023-08-18 16:53:17
  * @FilePath: /wc-intercept/wc-ptrace/example/test_dynamic.cc
  * @Description: 
  * 
@@ -13,7 +13,7 @@
 #include <stdio.h>
 
 int main() {
-    int count = 180;
+    int count = 300;
 
     while (count--) {
         int num = rand();
